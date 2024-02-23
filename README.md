@@ -1,6 +1,8 @@
-SEMANA 5 WomakersCode - Banco de Dados
+## Bootcamp Data Analytics WomakersCode
 
-## Este repositório se refere a uma atividade de banco de dados SQL, referente aulas da semana 5, do bootcamp Data Analytics da WomakersCode.
+# SEMANA 5 - Banco de Dados SQL
+
+# Este repositório se refere a uma atividade de banco de dados SQL, referente aulas da semana 5.
 
 1. Crie uma tabela chamada "alunos" com os seguintes campos: id
 (inteiro), nome (texto), idade (inteiro) e curso (texto).
