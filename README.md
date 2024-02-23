@@ -1,6 +1,6 @@
 SEMANA 5 WomakersCode - Banco de Dados
 
-Este repositório se refere a uma atividade de banco de dados SQL, referente aulas da semana 5, do bootcamp Data Analytics da WomakersCode.
+## Este repositório se refere a uma atividade de banco de dados SQL, referente aulas da semana 5, do bootcamp Data Analytics da WomakersCode.
 
 1. Crie uma tabela chamada "alunos" com os seguintes campos: id
 (inteiro), nome (texto), idade (inteiro) e curso (texto).
@@ -10,18 +10,19 @@ exercício anterior.
 
 3. Consultas Básicas
 Escreva consultas SQL para realizar as seguintes tarefas:
+
 a) Selecionar todos os registros da tabela "alunos".
 b) Selecionar o nome e a idade dos alunos com mais de 20 anos.
 c) Selecionar os alunos do curso de "Engenharia" em ordem
 alfabética.
 d) Contar o número total de alunos na tabela
 
-4. Atualização e Remoção
+5. Atualização e Remoção
 a) Atualize a idade de um aluno específico na tabela.
 b) Remova um aluno pelo seu ID.
 
 
-5. Criar uma Tabela e Inserir Dados
+6. Criar uma Tabela e Inserir Dados
 Crie uma tabela chamada "clientes" com os campos: id (chave
 primária), nome (texto), idade (inteiro) e saldo (float). Insira alguns
 registros de clientes na tabela.
