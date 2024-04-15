@@ -115,16 +115,19 @@ cursor = connection.cursor()
 # valor de cada compra.
 
 
-# consulta = cursor.execute('''
-#     SELECT clientes.nome, compras.produto, compras.valor
-#     FROM clientes
-#     JOIN compras ON clientes.id = compras.cliente_id
-# ''')
+cursor.execute('''
+CREATE TABLE  compras (
+    id INTEGER PRIMARY KEY,
+    cliente_id INTEGER,
+    produto TEXT,
+    valor REAL,
+    FOREIGN KEY (cliente_id) REFERENCES clientes(id)
+)
+''')
 
-
-# cursor.execute('INSERT INTO compras (cliente_id, produto, valor) VALUES (1, "ProdutoA", 50.0)')
-# cursor.execute('INSERT INTO compras (cliente_id, produto, valor) VALUES (2, "ProdutoB", 100.0)')
-# cursor.execute('INSERT INTO compras (cliente_id, produto, valor) VALUES (3, "ProdutoC", 75.0)')
+cursor.execute('INSERT INTO compras (cliente_id, produto, valor) VALUES (1, "ProdutoA", 50.0)')
+cursor.execute('INSERT INTO compras (cliente_id, produto, valor) VALUES (2, "ProdutoB", 100.0)')
+cursor.execute('INSERT INTO compras (cliente_id, produto, valor) VALUES (3, "ProdutoC", 75.0)')
 
 consulta = cursor.execute('''
     SELECT clientes.nome, compras.produto, compras.valor
@@ -134,10 +137,9 @@ consulta = cursor.execute('''
 
 resultados = consulta.fetchall()
 
-
 for resultado in resultados:
     print(resultado)
 
-
 connection.commit()
 connection.close()
+
