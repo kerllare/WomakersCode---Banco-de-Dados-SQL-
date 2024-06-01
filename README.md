@@ -1,4 +1,4 @@
-# Bootcamp Back-End Python e Django
+# Bootcamp Back-End Python 
 
 ## SEMANA 5 - Banco de Dados SQL
 
